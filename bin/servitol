@@ -1,0 +1,10 @@
+#!/usr/bin/env coffee
+
+[_, _, root="./"] = process.argv
+
+Servitol = require ".."
+
+servitol = new Servitol "test/files", {}
+console.error "Servitol is serving it all from #{root} on port #{servitol.port}"
+servitol.run()
+

@@ -1,0 +1,24 @@
+{
+  "name": "servitol",
+  "version": "0.1.0",
+  "description": "Serve static files on paths that may not exist, for testing browser stuff.",
+  "main": "src/index.coffee",
+  "bin": {
+    "servitol": "./bin/servitol"
+  },
+  "files": [
+    "bin",
+    "src",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "amen": "^1.0.6",
+    "node-static": "^0.7.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "coffee test/*.coffee"
+  },
+  "author": "Matthew King",
+  "license": "MIT"
+}
