@@ -14,7 +14,7 @@ A static file server for testing web frontends where you want to fool around wit
 
 ## How Servitol serves it all
 
-    mkdir path/to/content
+    mkdir -p path/to/content
     cd !$
     echo "ultimate fallback" > index.html
     echo "exactly what you want" > exact.html

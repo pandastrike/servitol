@@ -1,10 +1,10 @@
 #!/usr/bin/env coffee
 
-[_, _, root="./"] = process.argv
+[_, _, root="./", port=8888] = process.argv
 
 Servitol = require ".."
 
-servitol = new Servitol "test/files", {}
+servitol = new Servitol root, {port}
 console.error "Servitol is serving it all from #{root} on port #{servitol.port}"
 servitol.run()
 
