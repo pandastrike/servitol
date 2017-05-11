@@ -1,0 +1,10 @@
+{
+  "name": "servitol-polymer-test",
+  "main": "index.html",
+  "private": true,
+  "dependencies": {
+    "polymer": "^1.9.1",
+    "webcomponentsjs": "^0.7.24",
+    "app-route": "PolymerElements/app-route#^0.9.3"
+  }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>minimal test</title>
+
+    <!-- Imports polyfill -->
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="/bower_components/polymer/polymer.html" />
+    <link rel="import" href="/bower_components/iron-location/iron-location.html">
+
+
+    <dom-module id="servitol-x">
+
+      <template>
+        <iron-location path="{{path}}" hash="{{hash}}" query="{{query}}" dwell-time="{{dwellTime}}"></iron-location>
+      </template>
+
+      <script>
+        Polymer({
+          is: 'servitol-x',
+          properties: {
+            path: {
+              type: String,
+              notify: true
+            }
+          },
+          ready: function () {
+            console.log({path: this.path, query: this.query, hash: this.hash});
+            this.path = "/holeeeeecrap?smurf=blue";
+            console.log({path: this.path, query: this.query, hash: this.hash});
+          }
+        })
+      </script>
+
+    </dom-module>
+
+
+  </head>
+
+  <body>
+    <h1>Servitol says YES</h1>
+    <servitol-x></servitol-x>
+  </body>
+</html>
