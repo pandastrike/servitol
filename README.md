@@ -30,4 +30,15 @@ Servitol gives you that.
 
 Otherwise, Servitol gives you `/index.html`
 
+## Test application (currently showing failure)
+
+Included is a test of an attempt to get Polymer's `iron-location`
+working bidirectionally.
+It console.logs iron-location's idea of the parsed URL, then attempts
+to change the URL.path, hoping it will propagate to the window.
+
+    cd servitol/test/polymer
+    ../../bin/servitol . 9999
+
+Then visit http://localhost:9999/
 
